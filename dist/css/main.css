@@ -56,6 +56,17 @@ body {
   padding: 0;
   overflow: hidden;
 }
+#navbar .hamburger ul .drop-down .blog-content {
+  display: none;
+  position: absolute;
+  background-color: #152840;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+#navbar .hamburger ul .drop-down:hover .blog-content {
+  display: block;
+}
 #navbar .hamburger ul li {
   float: left;
 }
@@ -65,7 +76,8 @@ body {
 #navbar .hamburger ul li:hover a {
   color: #fff;
 }
-#navbar .hamburger ul li a {
+#navbar .hamburger ul li a,
+#navbar .hamburger ul li .drop-btn {
   display: inline-block;
   width: 100px;
   height: 100%;
