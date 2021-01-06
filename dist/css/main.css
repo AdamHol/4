@@ -2,6 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 16px;
 }
 
 body {
@@ -12,10 +14,15 @@ body {
 }
 
 #navbar {
+  display: flex;
   overflow: hidden;
   background: #eee;
   height: 50px;
   width: 100%;
+  justify-content: flex-start;
+  align-content: center;
+}
+#navbar .hamburger {
   display: flex;
 }
 #navbar .hamburger .burger {
@@ -23,8 +30,6 @@ body {
   width: 50px;
   height: 50px;
   border: none;
-  margin: 0 auto;
-  border-right: 1px solid #c5cdd1;
   cursor: pointer;
   position: relative;
 }
@@ -45,4 +50,56 @@ body {
 }
 #navbar .hamburger .burger span:nth-child(3) {
   top: 31px;
+}
+#navbar .hamburger ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+#navbar .hamburger ul li {
+  float: left;
+}
+#navbar .hamburger ul li:hover {
+  background: #56ccc8;
+}
+#navbar .hamburger ul li:hover .burger-blog-btn {
+  background: #56ccc8;
+  color: #fff;
+}
+#navbar .hamburger ul li:hover a {
+  color: #fff;
+}
+#navbar .hamburger ul li a {
+  display: inline-block;
+  width: 100px;
+  height: 100%;
+  padding: 16px 0px;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  margin: auto;
+}
+#navbar .hamburger ul li .burger-blog-btn {
+  display: inline-block;
+  width: 100px;
+  height: 100%;
+  text-align: center;
+  border: none;
+  padding: 16px 0px;
+}
+#navbar .hamburger ul li .burger-blog {
+  display: none;
+}
+#navbar .hamburger ul li .burger-blog-tech {
+  display: none;
+}
+#navbar .hamburger ul li .burger-blog-tech {
+  display: none;
+}
+#navbar .hamburger ul li .burger-blog-tech {
+  display: none;
+}
+#navbar .hamburger ul li .burger-blog-tech {
+  display: none;
 }
