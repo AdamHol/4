@@ -15,7 +15,6 @@ body {
 
 #navbar {
   display: flex;
-  overflow: hidden;
   background: #eee;
   height: 50px;
   width: 100%;
@@ -63,10 +62,6 @@ body {
 #navbar .hamburger ul li:hover {
   background: #56ccc8;
 }
-#navbar .hamburger ul li:hover .burger-blog-btn {
-  background: #56ccc8;
-  color: #fff;
-}
 #navbar .hamburger ul li:hover a {
   color: #fff;
 }
@@ -79,27 +74,4 @@ body {
   text-decoration: none;
   color: black;
   margin: auto;
-}
-#navbar .hamburger ul li .burger-blog-btn {
-  display: inline-block;
-  width: 100px;
-  height: 100%;
-  text-align: center;
-  border: none;
-  padding: 16px 0px;
-}
-#navbar .hamburger ul li .burger-blog {
-  display: none;
-}
-#navbar .hamburger ul li .burger-blog-tech {
-  display: none;
-}
-#navbar .hamburger ul li .burger-blog-tech {
-  display: none;
-}
-#navbar .hamburger ul li .burger-blog-tech {
-  display: none;
-}
-#navbar .hamburger ul li .burger-blog-tech {
-  display: none;
 }

@@ -16,7 +16,7 @@ body {
 
 #navbar {
   display: flex;
-  overflow: hidden;
+  // overflow: hidden;
   background: $light-grey;
   height: 50px;
   width: 100%;
@@ -65,11 +65,6 @@ body {
         &:hover {
           background: $green-ish;
 
-          .burger-blog-btn {
-            background: $green-ish;
-            color: $white;
-          }
-
           a {
             color: $white;
           }
@@ -83,30 +78,6 @@ body {
           text-decoration: none;
           color: black;
           margin: auto;
-        }
-        .burger-blog-btn {
-          display: inline-block;
-          width: 100px;
-          height: 100%;
-          text-align: center;
-          border: none;
-          padding: 16px 0px;
-        }
-        .burger-blog {
-          display: none;
-
-          &-tech {
-            display: none;
-          }
-          &-tech {
-            display: none;
-          }
-          &-tech {
-            display: none;
-          }
-          &-tech {
-            display: none;
-          }
         }
       }
     }
