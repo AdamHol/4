@@ -33,18 +33,28 @@
         </ul>
 
         <form class="search-container" action="/action_page.php">
-          <input type="text" placeholder="Search.." name="search">
+          <input type="text" placeholder="Search.." name="search" class="nav-in">
           <button type="submit"><i class="fa fa-search"></i></button>
         </form>
         <div class="social">
-          <a href="facebook.com"></a>
-          <a href="twitter.com"></a>
-          <a href="instagram.com"></a>
+          <a href="facebook.com"><i class="fab fa-facebook"></i></a>
+          <a href="twitter.com"><i class="fab fa-twitter"></i></a>
+          <a href="instagram.com"><i class="fab fa-instagram"></i></a>
         </div>
-        <button class="login"></button>
+        <button class="login"><i class="fas fa-user"></i></button>
       </div>
     </nav>
   </header>
+
+  <script>
+    const sections = document.querySelectorAll('.nav-in');
+
+    sections.forEach(item => {
+      item.addEventListener('mouseover', () => {
+        item.classList.add('show');
+      });
+    });
+  </script>
 </body>
 
 </html>

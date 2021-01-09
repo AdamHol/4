@@ -25,6 +25,7 @@ body {
 
   .hamburger {
     display: flex;
+    width: 100%;
     .burger {
       background: $green-ish;
       width: 50px;
@@ -104,23 +105,68 @@ body {
       display: inline-block;
       align-self: center;
       position: relative;
+      margin-left: 4rem;
+
+      input {
+        position: relative;
+        top: -200px;
+        z-index: -1;
+      }
 
       &:hover input {
         position: relative;
         display: inline;
         transition: 3s;
-        left: 0;
+        top: -1px;
         z-index: 1;
       }
 
-      input {
+      .show {
         position: relative;
-        left: -200px;
-        z-index: -1;
+        display: inline;
+        transition: 3s;
+        top: -1px;
+        z-index: 1;
       }
 
       button {
         border: none;
+        color: $dark-grey;
+        height: 50px;
+        width: 50px;
+
+        &:hover {
+          background: $grey;
+        }
+
+        .fa-search {
+          font-size: 20px;
+        }
+      }
+    }
+
+    .social {
+      width: 150px;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      margin-left: 1rem;
+      border-left: 1px solid $grey;
+      border-right: 1px solid $grey;
+      a {
+        i {
+          font-size: 35px;
+        }
+      }
+    }
+
+    .login {
+      align-self: center;
+      width: 50px;
+      height: 50px;
+      border: none;
+      i {
+        font-size: 25px;
         color: $dark-grey;
       }
     }
