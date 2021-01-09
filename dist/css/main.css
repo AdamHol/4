@@ -32,6 +32,7 @@ body {
   border: none;
   cursor: pointer;
   position: relative;
+  outline: none;
 }
 #navbar .hamburger .burger span {
   display: inline-block;
@@ -73,13 +74,34 @@ body {
 #navbar .hamburger ul .drop-down:hover .blog-content div:hover {
   background: #263a54;
 }
-#navbar .hamburger ul .drop-down:hover .blog-content div *:first-child {
+#navbar .hamburger ul .drop-down:hover .blog-content .article {
   display: flex;
   justify-content: space-between;
+  color: #56ccc8;
+  width: 100%;
+  font-weight: bold;
 }
-#navbar .hamburger ul .drop-down:hover .blog-content a {
-  width: 70%;
+#navbar .hamburger ul .drop-down:hover .blog-content .article p {
+  margin-left: 20px;
+}
+#navbar .hamburger ul .drop-down:hover .blog-content .article i {
+  margin-right: 20px;
+}
+#navbar .hamburger ul .drop-down:hover .blog-content .article:hover {
+  background-color: #56ccc8;
+  color: #263a54;
+}
+#navbar .hamburger ul .drop-down:hover .blog-content .section {
+  text-align: left;
+  width: 100%;
   display: block;
+  color: white;
+}
+#navbar .hamburger ul .drop-down:hover .blog-content .section p {
+  margin-left: 20px;
+}
+#navbar .hamburger ul .drop-down:hover .blog-content .section:hover {
+  background-color: #152840;
   color: #56ccc8;
 }
 #navbar .hamburger ul li {

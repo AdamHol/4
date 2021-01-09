@@ -26,6 +26,7 @@ body {
   .hamburger {
     display: flex;
     width: 100%;
+
     .burger {
       background: $green-ish;
       width: 50px;
@@ -33,6 +34,7 @@ body {
       border: none;
       cursor: pointer;
       position: relative;
+      outline: none;
 
       span {
         display: inline-block;
@@ -70,6 +72,7 @@ body {
           box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
           z-index: 1;
         }
+
         &:hover {
           .blog-content {
             display: block;
@@ -79,14 +82,39 @@ body {
               background: $dark-blue-hover;
             }
 
-            div *:first-child {
+            .article {
               display: flex;
               justify-content: space-between;
-            }
-            a {
-              width: 70%;
-              display: block;
               color: $green-ish;
+              width: 100%;
+              font-weight: bold;
+
+              p {
+                margin-left: 20px;
+              }
+              i {
+                margin-right: 20px;
+              }
+
+              &:hover {
+                background-color: $green-ish;
+                color: $dark-blue-hover;
+              }
+            }
+            .section {
+              text-align: left;
+              width: 100%;
+              display: block;
+              color: white;
+
+              p {
+                margin-left: 20px;
+              }
+
+              &:hover {
+                background-color: $dark-blue;
+                color: $green-ish;
+              }
             }
           }
         }
