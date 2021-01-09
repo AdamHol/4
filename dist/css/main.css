@@ -122,6 +122,7 @@ body {
 }
 #navbar .hamburger .search-container button:hover {
   background: #c5cdd1;
+  cursor: pointer;
 }
 #navbar .hamburger .search-container button .fa-search {
   font-size: 20px;
@@ -135,14 +136,32 @@ body {
   border-left: 1px solid #c5cdd1;
   border-right: 1px solid #c5cdd1;
 }
-#navbar .hamburger .social a i {
+#navbar .hamburger .social a .fa-facebook {
   font-size: 35px;
+  color: #4d6baa;
+}
+#navbar .hamburger .social a .fa-twitter {
+  font-size: 35px;
+  color: #4fc6f8;
+}
+#navbar .hamburger .social a .fa-instagram {
+  font-size: 35px;
+  color: #ba33f0;
 }
 #navbar .hamburger .login {
   align-self: center;
   width: 50px;
   height: 50px;
   border: none;
+  justify-self: right;
+  margin-left: 50px;
+}
+#navbar .hamburger .login:hover {
+  background: #c5cdd1;
+  cursor: pointer;
+}
+#navbar .hamburger .login:hover i {
+  color: #4d6baa;
 }
 #navbar .hamburger .login i {
   font-size: 25px;
