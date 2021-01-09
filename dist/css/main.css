@@ -71,6 +71,7 @@ body {
 }
 #navbar .hamburger ul .drop-down:hover .blog-content a {
   display: block;
+  color: #56ccc8;
 }
 #navbar .hamburger ul li {
   float: left;
