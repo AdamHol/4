@@ -68,8 +68,17 @@ body {
 }
 #navbar .hamburger ul .drop-down:hover .blog-content {
   display: block;
+  width: 220px;
+}
+#navbar .hamburger ul .drop-down:hover .blog-content div:hover {
+  background: #263a54;
+}
+#navbar .hamburger ul .drop-down:hover .blog-content div *:first-child {
+  display: flex;
+  justify-content: space-between;
 }
 #navbar .hamburger ul .drop-down:hover .blog-content a {
+  width: 70%;
   display: block;
   color: #56ccc8;
 }
