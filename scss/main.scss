@@ -73,6 +73,10 @@ body {
         &:hover {
           .blog-content {
             display: block;
+
+            a {
+              display: block;
+            }
           }
         }
       }
