@@ -58,6 +58,7 @@ body {
       margin: 0;
       padding: 0;
       overflow: hidden;
+      z-index: 1;
 
       .drop-down {
         .blog-content {
@@ -88,7 +89,7 @@ body {
         a,
         .drop-btn {
           display: inline-block;
-          width: 100px;
+          width: 80px;
           height: 100%;
           padding: 16px 0px;
           text-align: center;
@@ -96,6 +97,31 @@ body {
           color: black;
           margin: auto;
         }
+      }
+    }
+
+    .search-container {
+      display: inline-block;
+      align-self: center;
+      position: relative;
+
+      &:hover input {
+        position: relative;
+        display: inline;
+        transition: 3s;
+        left: 0;
+        z-index: 1;
+      }
+
+      input {
+        position: relative;
+        left: -200px;
+        z-index: -1;
+      }
+
+      button {
+        border: none;
+        color: $dark-grey;
       }
     }
   }

@@ -55,6 +55,7 @@ body {
   margin: 0;
   padding: 0;
   overflow: hidden;
+  z-index: 1;
 }
 #navbar .hamburger ul .drop-down .blog-content {
   display: none;
@@ -79,11 +80,32 @@ body {
 #navbar .hamburger ul li a,
 #navbar .hamburger ul li .drop-btn {
   display: inline-block;
-  width: 100px;
+  width: 80px;
   height: 100%;
   padding: 16px 0px;
   text-align: center;
   text-decoration: none;
   color: black;
   margin: auto;
+}
+#navbar .hamburger .search-container {
+  display: inline-block;
+  align-self: center;
+  position: relative;
+}
+#navbar .hamburger .search-container:hover input {
+  position: relative;
+  display: inline;
+  transition: 3s;
+  left: 0;
+  z-index: 1;
+}
+#navbar .hamburger .search-container input {
+  position: relative;
+  left: -200px;
+  z-index: -1;
+}
+#navbar .hamburger .search-container button {
+  border: none;
+  color: #333;
 }
