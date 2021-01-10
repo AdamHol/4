@@ -59,6 +59,25 @@ body {
   flex-direction: column;
   position: absolute;
 }
+#navbar .hamburger .burger-menu .menu-portrait li {
+  width: 210px;
+  background: #eee;
+  border-bottom: 1px solid #c5cdd1;
+}
+#navbar .hamburger .burger-menu .menu-portrait li:hover {
+  background-color: #56ccc8;
+}
+#navbar .hamburger .burger-menu .menu-portrait li a {
+  width: 100%;
+  text-align: left;
+  padding-left: 10px;
+  color: #333;
+}
+#navbar .hamburger .burger-menu .menu-portrait li a i {
+  margin-right: 20px;
+  font-size: 25px;
+  color: #c5cdd1;
+}
 #navbar .hamburger ul {
   list-style-type: none;
   margin: 0;
