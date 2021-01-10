@@ -26,7 +26,7 @@ body {
   display: flex;
   width: 100%;
 }
-#navbar .hamburger .burger {
+#navbar .hamburger .burger-menu .burger {
   background: #56ccc8;
   width: 50px;
   height: 50px;
@@ -34,8 +34,9 @@ body {
   cursor: pointer;
   position: relative;
   outline: none;
+  display: inline-block;
 }
-#navbar .hamburger .burger span {
+#navbar .hamburger .burger-menu .burger span {
   display: inline-block;
   width: 20px;
   height: 3px;
@@ -44,14 +45,19 @@ body {
   position: absolute;
   left: 15px;
 }
-#navbar .hamburger .burger span:nth-child(1) {
+#navbar .hamburger .burger-menu .burger span:nth-child(1) {
   top: 15px;
 }
-#navbar .hamburger .burger span:nth-child(2) {
+#navbar .hamburger .burger-menu .burger span:nth-child(2) {
   top: 23px;
 }
-#navbar .hamburger .burger span:nth-child(3) {
+#navbar .hamburger .burger-menu .burger span:nth-child(3) {
   top: 31px;
+}
+#navbar .hamburger .burger-menu .menu-portrait {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
 }
 #navbar .hamburger ul {
   list-style-type: none;

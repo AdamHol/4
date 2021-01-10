@@ -27,33 +27,41 @@ body {
     display: flex;
     width: 100%;
 
-    .burger {
-      background: $green-ish;
-      width: 50px;
-      height: 50px;
-      border: none;
-      cursor: pointer;
-      position: relative;
-      outline: none;
-
-      span {
+    .burger-menu {
+      .burger {
+        background: $green-ish;
+        width: 50px;
+        height: 50px;
+        border: none;
+        cursor: pointer;
+        position: relative;
+        outline: none;
         display: inline-block;
-        width: 20px;
-        height: 3px;
-        border-radius: 10px;
-        background: $white;
-        position: absolute;
-        left: 15px;
 
-        &:nth-child(1) {
-          top: 15px;
+        span {
+          display: inline-block;
+          width: 20px;
+          height: 3px;
+          border-radius: 10px;
+          background: $white;
+          position: absolute;
+          left: 15px;
+
+          &:nth-child(1) {
+            top: 15px;
+          }
+          &:nth-child(2) {
+            top: 23px;
+          }
+          &:nth-child(3) {
+            top: 31px;
+          }
         }
-        &:nth-child(2) {
-          top: 23px;
-        }
-        &:nth-child(3) {
-          top: 31px;
-        }
+      }
+      .menu-portrait {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
       }
     }
     ul {
