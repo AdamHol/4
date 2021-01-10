@@ -16,7 +16,7 @@ body {
 
 #navbar {
   display: flex;
-  // overflow: hidden;
+  overflow: hidden;
   background: $light-grey;
   height: 50px;
   width: 100%;
@@ -88,6 +88,7 @@ body {
               color: $green-ish;
               width: 100%;
               font-weight: bold;
+              height: 35px;
 
               p {
                 margin-left: 20px;
@@ -106,6 +107,8 @@ body {
               width: 100%;
               display: block;
               color: white;
+              height: 40px;
+              padding-top: 12px;
 
               p {
                 margin-left: 20px;
@@ -159,7 +162,7 @@ body {
       &:hover input {
         position: relative;
         display: inline;
-        transition: 3s;
+        transition: 1s;
         top: -1px;
         z-index: 1;
       }

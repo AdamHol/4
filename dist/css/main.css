@@ -15,6 +15,7 @@ body {
 
 #navbar {
   display: flex;
+  overflow: hidden;
   background: #eee;
   height: 50px;
   width: 100%;
@@ -80,6 +81,7 @@ body {
   color: #56ccc8;
   width: 100%;
   font-weight: bold;
+  height: 35px;
 }
 #navbar .hamburger ul .drop-down:hover .blog-content .article p {
   margin-left: 20px;
@@ -96,6 +98,8 @@ body {
   width: 100%;
   display: block;
   color: white;
+  height: 40px;
+  padding-top: 12px;
 }
 #navbar .hamburger ul .drop-down:hover .blog-content .section p {
   margin-left: 20px;
@@ -138,7 +142,7 @@ body {
 #navbar .hamburger .search-container:hover input {
   position: relative;
   display: inline;
-  transition: 3s;
+  transition: 1s;
   top: -1px;
   z-index: 1;
 }
