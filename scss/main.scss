@@ -31,6 +31,32 @@ body {
       &:hover {
         .menu-portrait {
           display: flex;
+
+          .contact-details {
+            &-phone {
+              width: 210px;
+              height: 80px;
+              background: $grey;
+
+              .fa-phone {
+                margin: 20px;
+                float: left;
+                font-size: 25px;
+                color: white;
+                transform: rotateY(180deg);
+              }
+
+              .phone {
+                color: white;
+                height: 80px;
+                padding-top: 15px;
+                a {
+                  text-decoration: none;
+                  color: white;
+                }
+              }
+            }
+          }
         }
       }
 

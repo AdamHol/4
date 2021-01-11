@@ -29,6 +29,27 @@ body {
 #navbar .hamburger .burger-menu:hover .menu-portrait {
   display: flex;
 }
+#navbar .hamburger .burger-menu:hover .menu-portrait .contact-details-phone {
+  width: 210px;
+  height: 80px;
+  background: #c5cdd1;
+}
+#navbar .hamburger .burger-menu:hover .menu-portrait .contact-details-phone .fa-phone {
+  margin: 20px;
+  float: left;
+  font-size: 25px;
+  color: white;
+  transform: rotateY(180deg);
+}
+#navbar .hamburger .burger-menu:hover .menu-portrait .contact-details-phone .phone {
+  color: white;
+  height: 80px;
+  padding-top: 15px;
+}
+#navbar .hamburger .burger-menu:hover .menu-portrait .contact-details-phone .phone a {
+  text-decoration: none;
+  color: white;
+}
 #navbar .hamburger .burger-menu .burger {
   background: #56ccc8;
   width: 50px;
