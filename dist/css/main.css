@@ -26,6 +26,9 @@ body {
   display: flex;
   width: 100%;
 }
+#navbar .hamburger .burger-menu:hover .menu-portrait {
+  display: flex;
+}
 #navbar .hamburger .burger-menu .burger {
   background: #56ccc8;
   width: 50px;
@@ -44,18 +47,29 @@ body {
   background: #fff;
   position: absolute;
   left: 15px;
+  justify-content: center;
 }
-#navbar .hamburger .burger-menu .burger span:nth-child(1) {
-  top: 15px;
+#navbar .hamburger .burger-menu .burger span:before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 3px;
+  border-radius: 10px;
+  background: #fff;
+  position: absolute;
+  margin: 8px -10px;
+  justify-content: center;
 }
-#navbar .hamburger .burger-menu .burger span:nth-child(2) {
-  top: 23px;
-}
-#navbar .hamburger .burger-menu .burger span:nth-child(3) {
-  top: 31px;
-}
-#navbar .hamburger .burger-menu:hover .menu-portrait {
-  display: flex;
+#navbar .hamburger .burger-menu .burger span:after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 3px;
+  border-radius: 10px;
+  background: #fff;
+  position: absolute;
+  margin: -8px -10px;
+  justify-content: center;
 }
 #navbar .hamburger .burger-menu .menu-portrait {
   display: none;

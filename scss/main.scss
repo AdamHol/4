@@ -28,6 +28,12 @@ body {
     width: 100%;
 
     .burger-menu {
+      &:hover {
+        .menu-portrait {
+          display: flex;
+        }
+      }
+
       .burger {
         background: $green-ish;
         width: 50px;
@@ -46,23 +52,34 @@ body {
           background: $white;
           position: absolute;
           left: 15px;
+          justify-content: center;
+        }
 
-          &:nth-child(1) {
-            top: 15px;
-          }
-          &:nth-child(2) {
-            top: 23px;
-          }
-          &:nth-child(3) {
-            top: 31px;
-          }
+        span:before {
+          content: "";
+          position: absolute;
+          width: 20px;
+          height: 3px;
+          border-radius: 10px;
+          background: $white;
+          position: absolute;
+          margin: 8px -10px;
+          justify-content: center;
+        }
+
+        span:after {
+          content: "";
+          position: absolute;
+          width: 20px;
+          height: 3px;
+          border-radius: 10px;
+          background: $white;
+          position: absolute;
+          margin: -8px -10px;
+          justify-content: center;
         }
       }
-      &:hover {
-        .menu-portrait {
-          display: flex;
-        }
-      }
+
       .menu-portrait {
         display: none;
         flex-direction: column;
