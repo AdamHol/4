@@ -42,17 +42,21 @@ body {
                 margin: 20px;
                 float: left;
                 font-size: 25px;
-                color: white;
+                color: $white;
                 transform: rotateY(180deg);
               }
 
               .phone {
-                color: white;
+                color: $white;
                 height: 80px;
                 padding-top: 15px;
                 a {
                   text-decoration: none;
-                  color: white;
+                  color: $white;
+
+                  &:hover {
+                    background: rgba(0, 0, 0, 0.1);
+                  }
                 }
               }
             }
@@ -65,13 +69,37 @@ body {
                 margin: 20px;
                 float: left;
                 font-size: 25px;
-                color: white;
+                color: $white;
               }
               .address {
                 padding-top: 10px;
                 a {
                   text-decoration: none;
-                  color: white;
+                  color: $white;
+                  &:hover {
+                    background: rgba(0, 0, 0, 0.1);
+                  }
+                }
+              }
+            }
+            &-email {
+              width: 210px;
+              height: 80px;
+
+              .fa-envelope {
+                margin: 20px;
+                float: left;
+                font-size: 25px;
+                color: $white;
+              }
+              .email {
+                padding-top: 15px;
+                a {
+                  color: $white;
+                  text-decoration: none;
+                  &:hover {
+                    background: rgba(0, 0, 0, 0.1);
+                  }
                 }
               }
             }
