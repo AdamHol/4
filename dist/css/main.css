@@ -34,6 +34,14 @@ body {
   display: absolute;
   margin-top: -60px;
 }
+#navbar .hamburger .burger-menu:hover .menu-portrait .drop-down:hover .blog-content:hover i, #navbar .hamburger .burger-menu:hover .menu-portrait .drop-down:active .blog-content:hover i, #navbar .hamburger .burger-menu:hover .menu-portrait .drop-down:focus .blog-content:hover i {
+  color: #263a54;
+}
+#navbar .hamburger .burger-menu:hover .menu-portrait .drop-down:hover .blog-content i, #navbar .hamburger .burger-menu:hover .menu-portrait .drop-down:active .blog-content i, #navbar .hamburger .burger-menu:hover .menu-portrait .drop-down:focus .blog-content i {
+  margin-right: 20px;
+  font-size: 15px;
+  color: #56ccc8;
+}
 #navbar .hamburger .burger-menu:hover .menu-portrait .contact-details {
   background: #c5cdd1;
 }

@@ -40,6 +40,17 @@ body {
                 margin-left: 210px;
                 display: absolute;
                 margin-top: -60px;
+                &:hover {
+                  i {
+                    color: $dark-blue-hover;
+                  }
+                }
+
+                i {
+                  margin-right: 20px;
+                  font-size: 15px;
+                  color: $green-ish;
+                }
               }
             }
           }
