@@ -29,6 +29,11 @@ body {
 #navbar .hamburger .burger-menu:hover .menu-portrait {
   display: flex;
 }
+#navbar .hamburger .burger-menu:hover .menu-portrait .drop-down:hover .blog-content, #navbar .hamburger .burger-menu:hover .menu-portrait .drop-down:active .blog-content, #navbar .hamburger .burger-menu:hover .menu-portrait .drop-down:focus .blog-content {
+  margin-left: 210px;
+  display: absolute;
+  margin-top: -60px;
+}
 #navbar .hamburger .burger-menu:hover .menu-portrait .contact-details {
   background: #c5cdd1;
 }
@@ -189,7 +194,8 @@ body {
   color: #56ccc8;
   width: 100%;
   font-weight: bold;
-  height: 35px;
+  height: 40px;
+  padding-top: 12px;
 }
 #navbar .hamburger ul .drop-down:hover .blog-content .article p {
   margin-left: 20px;
